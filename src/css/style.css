@@ -14,13 +14,16 @@
     --color3: #140d59;
     --color4: #993aed;
     --color5: #fff;
+    --color6: #301482;
     --font-poppins: "Poppins", sans-serif;
     --font-roboto: "Roboto", sans-serif;
 
 }
 
-body{
-    background-color: var(--color3);
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* STYLE BTN */
@@ -33,6 +36,8 @@ body{
     font-size: 1rem;
     border: 2px solid var(--color2);
     border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn_1:hover{
@@ -49,6 +54,8 @@ body{
     font-size: 1rem;
     border: 2px solid var(--color4);
     border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn_2:hover{
@@ -66,6 +73,8 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    position: fixed;
+    width: 100%;
 }
 
 #logo a{
@@ -104,7 +113,9 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background-color: var(--color3);
 
 }
 
@@ -128,6 +139,41 @@ nav ul li a:hover{
     flex-direction: row;
     gap: 2rem;
 }
+
+
+/* SECTION SOBRE */
+
+#sobre{
+    background-color: var(--color6);
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobre_img{
+    width: 550px;
+}
+
+#sobre_text{
+    width: 700px;
+    font-size: 25px;
+    margin-right: 15rem;
+    padding: 20px;
+}
+
+#sobre_text h2{   
+    text-align: center;
+    text-decoration: underline var(--color4);
+    text-underline-offset: 8px;
+    margin-bottom: 5rem;
+    font-family: var(--font-roboto);
+}
+
+#sobre_text span{
+    color: var(--color4);
+}
+
+
 
 
 /* RESPONSIVIDADE (1280) */
@@ -156,6 +202,22 @@ nav ul li a:hover{
     #hero h1{
         text-align: center;
     }
+
+    /* SOBRE */
+    #sobre{     
+        align-items: center;
+    }
+
+    #sobre_img{
+      width: 450px;
+    }
+
+    #sobre_text{
+        width: 700px;
+        margin-right: 0;
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 /* RESPONSIVIDADE (1024) */
@@ -182,6 +244,20 @@ nav ul li a:hover{
     }
 
     #hero h1{
+        text-align: center;
+    }
+
+
+    /* SOBRE */
+
+    #sobre_img{
+      width: 350px;
+    }
+
+    #sobre_text{
+        width: 600px;
+        margin-right: 0;
+        font-size: 20px;
         text-align: center;
     }
 }
@@ -220,7 +296,25 @@ nav ul li a:hover{
     #hero_img{
         width: 400px;
     }
+
+    /* SOBRE */
+
+    #sobre{
+        flex-direction: column;
+    }
+
+    #sobre_img{
+      display: none;
+    }
+
+
+    #sobre_text{
+        width: 400px;
+        font-size: 15px;
+    }
 }
+
+/* RESPONSIVIDADE (480) */
 
 @media screen and (max-width: 480px){
     #logo_img{
@@ -246,5 +340,12 @@ nav ul li a:hover{
     
     #hero_img{
         width: 300px;
+    }
+
+    /* SOBRE */
+
+    #sobre_text{
+        width: 300px;
+        font-size: 20px;
     }
 }
