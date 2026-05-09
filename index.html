@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <title>Pixel Analytics</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="">Projeto</a></li>
+                <li><a href="#prototipo">Projeto</a></li>
                 <li><a href="">Contato</a></li>
             </ul>
        </nav>
@@ -89,42 +90,50 @@
 
         <section id="prototipo">
             <h2>Protótipo</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                        <ul class="lista-slides swiper-wrapper">
 
-            <div class="slides">
+                            <li class="slide swiper-slide">
+                                <img src="./src/assets/slide1.png" alt="">
+                                <p>O usuário abre a câmera e seleciona o modo <span>Study</span>. A interface é adaptada para estudos, destacando automaticamente a área do conteúdo para 
+                                <span>facilitar</span> a captura da lousa, livros ou anotações.</p>
+                            </li>
 
-                <div class="slide">
-                    <img src="./src/assets/slide1.png" alt="">
-                    <p>O usuário abre a câmera e seleciona o modo <span>Study</span>. A interface é adaptada para estudos, destacando automaticamente a área do conteúdo para 
-                        <span>facilitar</span> a captura da lousa, livros ou anotações.</p>
-                </div>
+                            <li class="slide swiper-slide">
+                                <img src="./src/assets/slide2.png" alt="">
+                                <p>Após a captura, um <span>bottom sheet</span> é exibido com funções de IA como resumir, converter para PDF,
+                                melhorar qualidade, resolver exercícios e organizar automaticamente o conteúdo.</p>
+                           </li>
 
-                <div class="slide">
-                    <img src="./src/assets/slide2.png" alt="">
-                    
-                    <p>Após a captura, um <span>bottom sheet</span> é exibido com funções de IA como resumir, converter para PDF,
-                         melhorar qualidade, resolver exercícios e organizar automaticamente o conteúdo.</p>
-                </div>
-
-                <div class="slide">
-                    <img src="./src/assets/slide3.png" alt="">
-                    <div>
-                        <p>Após a captura, um menu inteligente é exibido automaticamente com funcionalidades rápidas, como:</p> <br> <br>
+                            <li class="slide swiper-slide">
+                                <img src="./src/assets/slide3.png" alt="">
+                                
+                                <div>
+                                    <p>Após a captura, um menu inteligente é exibido automaticamente com funcionalidades rápidas, como:</p> <br>
                      
-                        <ul>
-                            <li>Resumir conteúdo;</li>
-                            <li>Converter para PDF;</li>
-                            <li>Melhorar qualidade da imagem;</li>
-                            <li>Resolver exercícios;</li>
-                            <li>Assistente IA;</li>
-                            <li>Organização automática;</li>
+                                    <ul>
+                                        <li>Resumir conteúdo;</li>
+                                        <li>Converter para PDF;</li>
+                                        <li>Melhorar qualidade da imagem;</li>
+                                        <li>Resolver exercícios;</li>
+                                        <li>Assistente IA;</li>
+                                        <li>Organização automática;</li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                    
-                </div>
+                         
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
 
+                </div>
             </div>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
 </html>
