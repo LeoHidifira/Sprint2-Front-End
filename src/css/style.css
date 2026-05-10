@@ -64,6 +64,18 @@ html, body {
     border: 2px solid var(--color2);
 }
 
+/* MENU HAMBURGUER */
+
+#menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color1);
+    cursor: pointer;
+    z-index: 1000;
+}
+
 /* HEADER */
 
 header{
@@ -505,8 +517,33 @@ footer p a {
 
 @media screen and (max-width: 768px){
 
+
+    #menu-btn{
+        display: block;
+    }
+
     nav{
-        display: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+
+        width: 250px;
+        height: 100vh;
+
+        background-color: var(--color2);
+
+        transition: 0.5s;
+    }
+
+    nav.active{
+        right: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        gap: 3rem;
     }
 
     /* HERO */
