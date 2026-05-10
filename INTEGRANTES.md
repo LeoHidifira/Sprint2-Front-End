@@ -4,7 +4,7 @@
 
 . Murillo Dourado Viera - RM571912 
 
-. Gabriel Do Dantos Perine Tardelli - RM569751 
+. Gabriel Do Santos Perine Tardelli - RM569751 
 
 . André Peixoto Cano - RM570429 
 
